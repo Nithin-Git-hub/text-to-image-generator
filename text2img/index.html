@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-paint-brush"></i> AI Image Generator</h1>
+            <p>Describe what you want to see, and let AI create it for you.</p>
+        </header>
+        <div class="content">
+            <textarea id="inputText" placeholder="Type your description here..."></textarea>
+            <button id="generateBtn"><i class="fas fa-magic"></i> Generate Image</button>
+            <div id="output">
+                <img id="generatedImage" src="" alt="Generated Image">
+                <a id="downloadLink" href="#" download="generated-image.png"><i class="fas fa-download"></i> Download Image</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
